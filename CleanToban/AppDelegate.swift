@@ -8,15 +8,39 @@
 
 import UIKit
 import CoreData
+import NCMB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var ChangeValue = false
+    var current_a: String?
+    var current_b: String?
+    var current_c: String?
+    var current_d: String?
+    var current_aNum: String = "値がありません"
+    var current_bNum: String = "値がありません"
+    var current_cNum: String = "値がありません"
+    var current_dNum: String = "値がありません"
+    var newal_a: String?
+    var newal_b: String?
+    var newal_c: String?
+    var newal_d: String?
+    var newal_aNum: String?
+    var newal_bNum: String?
+    var newal_cNum: String?
+    var newal_dNum: Int?
+    var MeClass: String?
+    var ClassName = "Empty"
+    var JsonName = "Meibo"
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NCMB.setApplicationKey("58f2e74ae4756806feaffeafd1f1dc91df9438b6471702ad1797702cd4f41e26", clientKey: "d920d03343160df8aaff4ba1e7e3b4e601fe02632ba6eca9dbd2ebbedcaeaf2c")
         return true
     }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174A09BF1EC196DE009EF8C3 /* Meibo.json in Resources */ = {isa = PBXBuildFile; fileRef = 174A09BE1EC196DE009EF8C3 /* Meibo.json */; };
+		174A09C31EC209FD009EF8C3 /* ChangeNumberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A09C21EC209FD009EF8C3 /* ChangeNumberController.swift */; };
 		179BF7CA1EC0308A0030E763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179BF7C91EC0308A0030E763 /* AppDelegate.swift */; };
 		179BF7CC1EC0308A0030E763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179BF7CB1EC0308A0030E763 /* ViewController.swift */; };
 		179BF7CF1EC0308A0030E763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179BF7CD1EC0308A0030E763 /* Main.storyboard */; };
@@ -15,6 +17,11 @@
 		179BF7D71EC0308A0030E763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179BF7D51EC0308A0030E763 /* LaunchScreen.storyboard */; };
 		179BF7E21EC0308B0030E763 /* CleanTobanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179BF7E11EC0308B0030E763 /* CleanTobanTests.swift */; };
 		179BF7ED1EC0308B0030E763 /* CleanTobanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179BF7EC1EC0308B0030E763 /* CleanTobanUITests.swift */; };
+		17BE25531EC03BD200F006FB /* HiendClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE25521EC03BD200F006FB /* HiendClassController.swift */; };
+		17BE25551EC03BDC00F006FB /* UnityClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE25541EC03BDC00F006FB /* UnityClassController.swift */; };
+		17BE25571EC03BE500F006FB /* BasicClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE25561EC03BE500F006FB /* BasicClassController.swift */; };
+		17BE25591EC03BEF00F006FB /* MMixClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE25581EC03BEF00F006FB /* MMixClassController.swift */; };
+		3CE5620EE1B0617EB8B341AB /* Pods_CleanToban.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFD01241CE9429FB25A0753 /* Pods_CleanToban.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		174A09BE1EC196DE009EF8C3 /* Meibo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Meibo.json; sourceTree = "<group>"; };
+		174A09C21EC209FD009EF8C3 /* ChangeNumberController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNumberController.swift; sourceTree = "<group>"; };
 		179BF7C61EC0308A0030E763 /* CleanToban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanToban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179BF7C91EC0308A0030E763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		179BF7CB1EC0308A0030E763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		179BF7E81EC0308B0030E763 /* CleanTobanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanTobanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		179BF7EC1EC0308B0030E763 /* CleanTobanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanTobanUITests.swift; sourceTree = "<group>"; };
 		179BF7EE1EC0308B0030E763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17BE25521EC03BD200F006FB /* HiendClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HiendClassController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		17BE25541EC03BDC00F006FB /* UnityClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = UnityClassController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		17BE25561EC03BE500F006FB /* BasicClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BasicClassController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		17BE25581EC03BEF00F006FB /* MMixClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMixClassController.swift; sourceTree = "<group>"; };
+		1CFD01241CE9429FB25A0753 /* Pods_CleanToban.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanToban.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE6065CC04CA41E7A8AFF33 /* Pods-CleanToban.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanToban.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanToban/Pods-CleanToban.release.xcconfig"; sourceTree = "<group>"; };
+		CAC0821CC889C1D2F5A8F202 /* Pods-CleanToban.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanToban.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanToban/Pods-CleanToban.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE5620EE1B0617EB8B341AB /* Pods_CleanToban.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1DE41A26340AC649296247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CFD01241CE9429FB25A0753 /* Pods_CleanToban.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		179BF7BD1EC0308A0030E763 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				179BF7E01EC0308B0030E763 /* CleanTobanTests */,
 				179BF7EB1EC0308B0030E763 /* CleanTobanUITests */,
 				179BF7C71EC0308A0030E763 /* Products */,
+				888C17A10582FEA63ECEB19F /* Pods */,
+				0B1DE41A26340AC649296247 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +126,7 @@
 		179BF7C81EC0308A0030E763 /* CleanToban */ = {
 			isa = PBXGroup;
 			children = (
+				174A09BE1EC196DE009EF8C3 /* Meibo.json */,
 				179BF7C91EC0308A0030E763 /* AppDelegate.swift */,
 				179BF7CB1EC0308A0030E763 /* ViewController.swift */,
 				179BF7CD1EC0308A0030E763 /* Main.storyboard */,
@@ -106,6 +134,11 @@
 				179BF7D51EC0308A0030E763 /* LaunchScreen.storyboard */,
 				179BF7D81EC0308A0030E763 /* Info.plist */,
 				179BF7D01EC0308A0030E763 /* CleanToban.xcdatamodeld */,
+				17BE25521EC03BD200F006FB /* HiendClassController.swift */,
+				17BE25541EC03BDC00F006FB /* UnityClassController.swift */,
+				17BE25561EC03BE500F006FB /* BasicClassController.swift */,
+				17BE25581EC03BEF00F006FB /* MMixClassController.swift */,
+				174A09C21EC209FD009EF8C3 /* ChangeNumberController.swift */,
 			);
 			path = CleanToban;
 			sourceTree = "<group>";
@@ -128,6 +161,15 @@
 			path = CleanTobanUITests;
 			sourceTree = "<group>";
 		};
+		888C17A10582FEA63ECEB19F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAC0821CC889C1D2F5A8F202 /* Pods-CleanToban.debug.xcconfig */,
+				BDE6065CC04CA41E7A8AFF33 /* Pods-CleanToban.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 179BF7F11EC0308B0030E763 /* Build configuration list for PBXNativeTarget "CleanToban" */;
 			buildPhases = (
+				93C84085D873D847EC38EA90 /* [CP] Check Pods Manifest.lock */,
 				179BF7C21EC0308A0030E763 /* Sources */,
 				179BF7C31EC0308A0030E763 /* Frameworks */,
 				179BF7C41EC0308A0030E763 /* Resources */,
+				41D396A6FC625A75AC7705FA /* [CP] Embed Pods Frameworks */,
+				0314A8FF81BF05BE9212364C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +285,7 @@
 			files = (
 				179BF7D71EC0308A0030E763 /* LaunchScreen.storyboard in Resources */,
 				179BF7D41EC0308A0030E763 /* Assets.xcassets in Resources */,
+				174A09BF1EC196DE009EF8C3 /* Meibo.json in Resources */,
 				179BF7CF1EC0308A0030E763 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,14 +306,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0314A8FF81BF05BE9212364C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleanToban/Pods-CleanToban-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41D396A6FC625A75AC7705FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleanToban/Pods-CleanToban-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93C84085D873D847EC38EA90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		179BF7C21EC0308A0030E763 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17BE25551EC03BDC00F006FB /* UnityClassController.swift in Sources */,
+				174A09C31EC209FD009EF8C3 /* ChangeNumberController.swift in Sources */,
+				17BE25571EC03BE500F006FB /* BasicClassController.swift in Sources */,
 				179BF7D21EC0308A0030E763 /* CleanToban.xcdatamodeld in Sources */,
 				179BF7CC1EC0308A0030E763 /* ViewController.swift in Sources */,
 				179BF7CA1EC0308A0030E763 /* AppDelegate.swift in Sources */,
+				17BE25591EC03BEF00F006FB /* MMixClassController.swift in Sources */,
+				17BE25531EC03BD200F006FB /* HiendClassController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +516,7 @@
 		};
 		179BF7F21EC0308B0030E763 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC0821CC889C1D2F5A8F202 /* Pods-CleanToban.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9YN493UFZE;
@@ -425,11 +525,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.whim.CleanToban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		179BF7F31EC0308B0030E763 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE6065CC04CA41E7A8AFF33 /* Pods-CleanToban.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9YN493UFZE;
@@ -438,6 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.whim.CleanToban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -518,6 +621,7 @@
 				179BF7F31EC0308B0030E763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		179BF7F41EC0308B0030E763 /* Build configuration list for PBXNativeTarget "CleanTobanTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +630,7 @@
 				179BF7F61EC0308B0030E763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		179BF7F71EC0308B0030E763 /* Build configuration list for PBXNativeTarget "CleanTobanUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +639,7 @@
 				179BF7F91EC0308B0030E763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
