@@ -21,7 +21,6 @@
 #import "NCMBError.h"
 #import "NCMBConstants.h"
 #import <CommonCrypto/CommonCrypto.h>
-#import "NCMBDateFormat.h"
 
 static NSString *const kEndPoint            = @"https://mb.api.cloud.nifty.com";
 static NSString *const kAPIVersion          = @"2013-09-01";
@@ -107,6 +106,17 @@ typedef enum : NSInteger {
     return self;
 }
 
+- (NSString*)percentEscape:(NSString*)str{
+    CFStringRef escapedStrRef = CFURLCreateStringByAddingPercentEscapes(
+                                                                   NULL,
+                                                                   (__bridge CFStringRef)str,
+                                                                   NULL,
+                                                                   (__bridge CFStringRef)@"!*();@+,%#\"",
+                                                                   kCFStringEncodingUTF8 );
+    NSString *escapedStr = CFBridgingRelease(escapedStrRef);
+    return escapedStr;
+}
+
 
 #pragma mark request
 
@@ -130,9 +140,9 @@ typedef enum : NSInteger {
  @return NSMutableURLRequest型リクエスト
  */
 - (NSMutableURLRequest *)createRequest {
-    self.query = [self.query stringByAddingPercentEncodingWithAllowedCharacters:[[NSCharacterSet characterSetWithCharactersInString:@"#[]@!()*+,;\"<>\\%^`{|} \b\t\n\a\r"] invertedSet]];
+    self.query = [self percentEscape:self.query];
     [self createSignature];
-    self.path = [self.path stringByAddingPercentEncodingWithAllowedCharacters:[[NSCharacterSet characterSetWithCharactersInString:@"#[]@!()*+,;\"<>\\%^`{|} \b\t\n\a\r"] invertedSet]];
+    self.path = [self percentEscape:self.path];
     
     //url生成
     NSString *endPointStr = [self returnEndPoint];
@@ -175,8 +185,14 @@ typedef enum : NSInteger {
     NSString *endpointStr = [self returnEndPoint];
     NSArray *splitedEndPoint = [endpointStr componentsSeparatedByString:@"/"];
     NSString *fqdn = splitedEndPoint[2];
-
-    NSString *timeStamp = [[NCMBDateFormat getIso8601DateFormat] stringFromDate:[NSDate date]];
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc]init];
+    [df setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
+    //和暦表示と12時間表示対策
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    [df setCalendar:calendar];
+    [df setLocale:[NSLocale systemLocale]];
+    NSString *timeStamp = [df stringFromDate:[NSDate date]];
     self.timeStamp = timeStamp;
     
     //2013-09-01/〜以降のPathの取得
@@ -307,9 +323,13 @@ typedef enum : NSInteger {
             return contents;
         }
         
-        //削除の場合は空、それ以外はNSDictionaryが返却される
-        responseDic = [self convertResponseToDic:contents error:error];
-        
+        if([self.path isEqualToString:[NSString stringWithFormat:@"/%@/%@", kAPIVersion, @"batch"]]) {
+            //バッチ処理の場合は配列が返却される
+            responseDic = [NSDictionary dictionaryWithObject:[self convertResponseToArr:contents error:error] forKey:@"result"];
+        } else {
+            //削除の場合は空、それ以外はNSDictionaryが返却される
+            responseDic = [self convertResponseToDic:contents error:error];
+        }
         [self signatureCheck:response contentsData:contents error:error];
         
         return responseDic;

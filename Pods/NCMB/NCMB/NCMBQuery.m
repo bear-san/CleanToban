@@ -24,7 +24,6 @@
 
 #import "SubClassHandler.h"
 #import <objc/runtime.h>
-#import "NCMBDateFormat.h"
 
 @interface NCMBQuery ()
 
@@ -651,7 +650,16 @@ withinGeoBoxFromSouthwest:(NCMBGeoPoint *)southwest
  NCMB形式の日付型NSDateFormatterオブジェクトを返す
  */
 -(NSDateFormatter*)createNCMBDateFormatter{
-    return [NCMBDateFormat getIso8601DateFormat];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //和暦表示と12時間表示対策
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    [dateFormatter setCalendar:calendar];
+    [dateFormatter setLocale:[NSLocale systemLocale]];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"];
+    
+    return dateFormatter;
 }
 
 /**
