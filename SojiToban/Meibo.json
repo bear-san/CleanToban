@@ -1,0 +1,33 @@
+{
+    "Hiend": {
+        "1":{"ID" : 1,"name" : "empty","Hurigana":"てすと"},
+        "2":{"ID" : 2,"name" : "empty","Hurigana":"てすと"},
+        "3":{"ID" : 3,"name" : "empty","Hurigana":"てすと"},
+        "4":{"ID" : 4,"name" : "empty","Hurigana":"てすと"},
+        "5":{"ID" : 5,"name" : "empty","Hurigana":"てすと"}
+    },
+    "Unity": {
+        "1":{"ID" : 1,"name" : "empty","Hurigana":"てすと"},
+        "2":{"ID" : 2,"name" : "empty","Hurigana":"てすと"},
+        "3":{"ID" : 3,"name" : "empty","Hurigana":"てすと"},
+        "4":{"ID" : 4,"name" : "empty","Hurigana":"てすと"},
+        "5":{"ID" : 5,"name" : "empty","Hurigana":"てすと"},
+        "6":{"ID" : 6,"name" : "empty","Hurigana":"てすと"}
+    },
+    "MediaMix": {
+        "1":{"ID" : 1,"name" : "empty","Hurigana":"てすと"},
+        "2":{"ID" : 2,"name" : "empty","Hurigana":"てすと"},
+        "3":{"ID" : 3,"name" : "empty","Hurigana":"てすと"},
+        "4":{"ID" : 4,"name" : "empty","Hurigana":"てすと"},
+        "5":{"ID" : 5,"name" : "empty","Hurigana":"てすと"}
+    },
+    "Basic_Class": {
+        "1":{"ID" : 1,"name" : "empty","Hurigana":"てすと"},
+        "2":{"ID" : 2,"name" : "empty","Hurigana":"てすと"},
+        "3":{"ID" : 3,"name" : "empty","Hurigana":"てすと"},
+        "4":{"ID" : 4,"name" : "empty","Hurigana":"てすと"},
+        "5":{"ID" : 5,"name" : "empty","Hurigana":"てすと"}
+    }
+    
+}
+
